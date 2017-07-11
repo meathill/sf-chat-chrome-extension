@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "SF Chat sender",
+  "description": "This extension will find messages in SF chat room, and send them to other window, and show them in bullet screen",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "./img/meathill.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://segmentfault.com/"
+  ]
+}

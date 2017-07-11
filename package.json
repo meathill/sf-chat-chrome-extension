@@ -1,0 +1,32 @@
+{
+  "name": "sf-chat",
+  "version": "0.1.0",
+  "description": "a chrome extension for sf' live-stream chatroom to bullet screen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylus": "mkdir css & stylus -w -m styl/screen.styl -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meathill/sf-chat-chrome-extension.git"
+  },
+  "keywords": [
+    "chrome extension",
+    "sf.com",
+    "live-stream chat"
+  ],
+  "author": {
+    "name": "Meathill",
+    "email": "meathill@gmail.com",
+    "url": "http://meathill.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meathill/sf-chat-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/meathill/sf-chat-chrome-extension#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
