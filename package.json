@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylus": "mkdir css & stylus -w -m styl/screen.styl -o css/"
+    "stylus": "mkdir css & stylus -w -m styl/screen.styl -o css/",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,8 @@
   "homepage": "https://github.com/meathill/sf-chat-chrome-extension#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "webpack": "^3.2.0"
   }
 }

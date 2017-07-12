@@ -10,7 +10,22 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab",
-    "https://segmentfault.com/"
-  ]
+    "tabs",
+    "https://segmentfault.com/",
+    "http://localhost/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://segmentfault.com/l/*/play"],
+      "js": ["./js/injector.js"]
+    },
+    {
+      "matches": ["http://localhost/*"],
+      "js": ["./js/receiver.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["./js/middle.js"],
+    "persistent": false
+  }
 }
